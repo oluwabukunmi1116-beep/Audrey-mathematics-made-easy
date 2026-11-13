@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f8fc">
+    <meta name="description" content="Learn every JSS1 and JSS2 mathematics topic with clear lessons, worked examples and practice questions.">
+    <title>Mathematics Made Easy | JSS1 & JSS2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#" data-action="home" aria-label="Mathematics Made Easy home">
+          <span class="brand-mark" aria-hidden="true"><span>∑</span></span>
+          <span class="brand-copy"><strong>Maths made</strong><strong>easy<span>.</span></strong></span>
+        </a>
+        <div class="side-label">LEARNING</div>
+        <button class="nav-link active" type="button" data-action="home"><span class="nav-icon">⌂</span>Overview</button>
+        <button class="nav-link" type="button" data-action="all-topics"><span class="nav-icon">▦</span>All topics<span class="nav-count" id="topic-count">26</span></button>
+        <div class="side-label year-label">YOUR CLASS</div>
+        <button class="class-link" type="button" data-level="JSS1"><span class="class-badge badge-one">1</span><span><strong>JSS 1</strong><small>14 learning units</small></span><span class="chevron">›</span></button>
+        <button class="class-link" type="button" data-level="JSS2"><span class="class-badge badge-two">2</span><span><strong>JSS 2</strong><small>14 learning units</small></span><span class="chevron">›</span></button>
+        <div class="sidebar-note">
+          <span class="note-spark">✦</span>
+          <strong>Little steps add up.</strong>
+          <p>Keep practising and your confidence will grow.</p>
+        </div>
+        <div class="sidebar-bottom"><span class="online-dot"></span> Your learning is saved on this device</div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <button class="mobile-menu" type="button" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+          <div class="breadcrumb"><span>Learning space</span><span class="crumb-slash">/</span><strong id="breadcrumb-current">Overview</strong></div>
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input id="search-input" type="search" placeholder="Find a topic..." autocomplete="off" aria-label="Search mathematics topics">
+            <kbd>⌘ K</kbd>
+          </label>
+          <div class="student-chip"><span class="student-avatar">M</span><span><strong>My learning</strong><small>JSS mathematics</small></span></div>
+        </header>
+        <div class="mobile-backdrop" id="mobile-backdrop"></div>
+        <section class="content" id="app-content" aria-live="polite"></section>
+        <footer class="page-footer"><span>MATHEMATICS MADE EASY</span><span>Learn it. Practise it. Make it yours.</span></footer>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
